@@ -90,7 +90,16 @@ body {
   box-shadow: 0px 5px 25px 1px black;
 }
 
-#form-container {
-  border: 2px solid blue;
-  display: flex;
+td {
+  padding-right: 5em;
+}
+
+input {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+label {
+  color: var(--theme-color);
 }
