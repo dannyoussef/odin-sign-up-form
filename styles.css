@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  overflow: hidden;
+  font-family: "Arvo", serif;
 }
 
 #container {
@@ -17,15 +17,59 @@ body {
   flex: 1;
 }
 
-#bg-img {
+#img-container {
   display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#bg-img {
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
 }
 
+#bg-img-text-container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.39);
+  width: 100%;
+  height: fit-content;
+  margin-top: 25%;
+}
+
+#odin-logo {
+  width: 70px;
+  height: auto;
+}
+
+#bg-img-text-container > h1 {
+  font-size: 60px;
+  margin: 20px 0px 20px 0px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#bg-img-source {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#bg-img-source > p {
+  color: white;
+  text-align: center;
+  font-size: medium;
+}
+
+#bg-img-source > p > a {
+  color: white;
+}
+
 #main-content {
   flex: 2;
-  background-color: var(--light-color);
 }
